@@ -1,29 +1,29 @@
-let currentLang = 'en'; // Initialize with a default language (e.g., English)
+// Initialize with a default language (e.g., English)
+let currentLang = 'en'; 
 
 // Keep track of the last form submission status
-let lastFormStatus = null; // 'success', 'error', or null
-
+let lastFormStatus = null; // 'success', 'error', or nul
 
 // Language content object
 const content = {
     en: {
-        pageTitle: "Your Name - Portfolio",
-        yourNameNav: "Your Name",
+        pageTitle: "Dip Aryal - Portfolio",
+        yourNameNav: "Dip Aryal",
         navAbout: "About",
         navSkills: "Skills",
         navPortfolio: "Portfolio",
         navContact: "Contact",
-        heroGreeting: "Hi, I'm Your Name",
-        heroDescription: "A passionate <span class=\"font-semibold text-blue-500\">[Your Profession/Role]</span> dedicated to creating impactful and user-friendly solutions.",
+        heroGreeting: "Hi, I'm Dip Aryal",
+        heroDescription: "A passionate <span class=\"font-semibold text-blue-500\">Software Developer</span> dedicated to creating impactful and user-friendly solutions.",
         heroBtnViewWork: "View My Work",
         heroBtnContact: "Get In Touch",
         aboutHeading: "About Me",
-        aboutPara1: "Hello! I'm <span class=\"font-semibold text-blue-600\">Your Name</span>, a [Your Profession/Role] with X years of experience in [Your Industry/Field]. My journey in [Your Field] began with a fascination for [something specific, e.g., problem-solving, design, technology], and it has since evolved into a passion for crafting innovative and efficient solutions.",
+        aboutPara1: "Hello! I'm <span class=\"font-semibold text-blue-600\">Dip Aryal</span>, a Software Developer with 5+ years of experience in Software Development. My journey in [Your Field] began with a fascination for [something specific, e.g., problem-solving, design, technology], and it has since evolved into a passion for crafting innovative and efficient solutions.",
         aboutPara2: "I specialize in [mention 2-3 key areas, e.g., front-end development, UX/UI design, data analysis, project management] and thrive on challenges that push me to learn and grow. I believe in the power of clean code, intuitive design, and collaborative teamwork to bring ideas to life.",
         aboutPara3: "Outside of work, you can find me [mention a hobby or two, e.g., hiking, reading, exploring new tech, cooking]. I'm always eager to connect with fellow professionals and explore new opportunities. Let's build something amazing together!",
         skillsHeading: "My Skills",
         skillWebDevTitle: "Web Development",
-        skillWebDevDesc: "HTML, CSS, JavaScript, React, Vue.js",
+        skillWebDevDesc: "HTML, CSS, JavaScript, Python, Node.js",
         skillUIDesignTitle: "UI/UX Design",
         skillUIDesignDesc: "Figma, Sketch, Adobe XD, Prototyping",
         skillDataAnalysisTitle: "Data Analysis",
@@ -52,33 +52,33 @@ const content = {
         viewProjectBtn: "View Project",
         contactHeading: "Get In Touch",
         contactIntro: "Have a project in mind or just want to say hello? Feel free to reach out!",
-        contactLabelName: "Your Name",
+        contactLabelName: "Dip Aryal",
         contactLabelEmail: "Your Email",
         contactLabelMessage: "Message",
         contactBtnSend: "Send Message",
         contactFindMe: "You can also find me on:",
-        footerCopyright: "&copy; 2025 Your Name. All rights reserved.",
+        footerCopyright: "&copy; 2025 Dip Aryal. All rights reserved.",
         formSuccess: "Thank you for your message! I'll get back to you soon.",
         formError: "Oops! Something went wrong. Please try again later."
     },
     de: {
-        pageTitle: "Ihr Name - Portfolio",
-        yourNameNav: "Ihr Name",
+        pageTitle: "Dip Aryal - Portfolio",
+        yourNameNav: "Dip Aryal",
         navAbout: "Über mich",
         navSkills: "Fähigkeiten",
         navPortfolio: "Portfolio",
         navContact: "Kontakt",
-        heroGreeting: "Hallo, ich bin Ihr Name",
-        heroDescription: "Ein leidenschaftlicher <span class=\"font-semibold text-blue-500\">[Ihre Berufsbezeichnung/Rolle]</span>, der sich der Entwicklung wirkungsvoller und benutzerfreundlicher Lösungen widmet.",
+        heroGreeting: "Hallo, ich bin Dip Aryal",
+        heroDescription: "Ein leidenschaftlicher <span class=\"font-semibold text-blue-500\">Softwareentwickler</span>, der sich der Entwicklung wirkungsvoller und benutzerfreundlicher Lösungen widmet.",
         heroBtnViewWork: "Meine Arbeit ansehen",
         heroBtnContact: "Kontakt aufnehmen",
         aboutHeading: "Über mich",
-        aboutPara1: "Hallo! Ich bin <span class=\"font-semibold text-blue-600\">Ihr Name</span>, ein [Ihre Berufsbezeichnung/Rolle] mit X Jahren Erfahrung in [Ihrer Branche/Ihrem Bereich]. Meine Reise in [Ihrem Bereich] begann mit einer Faszination für [etwas Spezifisches, z.B. Problemlösung, Design, Technologie] und hat sich seitdem zu einer Leidenschaft für die Entwicklung innovativer und effizienter Lösungen entwickelt.",
+        aboutPara1: "Hallo! Ich bin <span class=\"font-semibold text-blue-600\">Dip Aryal</span>, ein Softwareentwickler mit 5+ Jahren Erfahrung in [Ihrer Branche/Ihrem Bereich]. Meine Reise in [Ihrem Bereich] begann mit einer Faszination für [etwas Spezifisches, z.B. Problemlösung, Design, Technologie] und hat sich seitdem zu einer Leidenschaft für die Entwicklung innovativer und effizienter Lösungen entwickelt.",
         aboutPara2: "Ich bin spezialisiert auf [erwähnen Sie 2-3 Schlüsselbereiche, z.B. Frontend-Entwicklung, UX/UI-Design, Datenanalyse, Projektmanagement] und liebe Herausforderungen, die mich dazu anspornen, zu lernen und zu wachsen. Ich glaube an die Kraft von sauberem Code, intuitivem Design und kollaborativer Teamarbeit, um Ideen zum Leben zu erwecken.",
         aboutPara3: "Außerhalb der Arbeit finden Sie mich beim [erwähnen Sie ein oder zwei Hobbys, z.B. Wandern, Lesen, neue Technologien erkunden, Kochen]. Ich bin immer daran interessiert, mich mit anderen Fachleuten zu vernetzen und neue Möglichkeiten zu erkunden. Lassen Sie uns gemeinsam etwas Großartiges aufbauen!",
         skillsHeading: "Meine Fähigkeiten",
         skillWebDevTitle: "Webentwicklung",
-        skillWebDevDesc: "HTML, CSS, JavaScript, React, Vue.js",
+        skillWebDevDesc: "HTML, CSS, JavaScript, Python, Node.js",
         skillUIDesignTitle: "UI/UX Design",
         skillUIDesignDesc: "Figma, Sketch, Adobe XD, Prototyping",
         skillDataAnalysisTitle: "Datenanalyse",
@@ -107,12 +107,12 @@ const content = {
         viewProjectBtn: "Projekt ansehen",
         contactHeading: "Kontakt aufnehmen",
         contactIntro: "Haben Sie ein Projekt im Sinn oder möchten Sie einfach nur Hallo sagen? Melden Sie sich gerne!",
-        contactLabelName: "Ihr Name",
+        contactLabelName: "Dip Aryal",
         contactLabelEmail: "Ihre E-Mail",
         contactLabelMessage: "Nachricht",
         contactBtnSend: "Nachricht senden",
         contactFindMe: "Sie finden mich auch auf:",
-        footerCopyright: "&copy; 2025 Ihr Name. Alle Rechte vorbehalten.",
+        footerCopyright: "&copy; 2025 Dip Aryal. Alle Rechte vorbehalten.",
         formSuccess: "Vielen Dank für Ihre Nachricht! Ich melde mich bald bei Ihnen.",
         formError: "Hoppla! Etwas ist schief gelaufen. Bitte versuchen Sie es später noch einmal."
     }
